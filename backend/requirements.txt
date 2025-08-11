@@ -1,2 +1,4 @@
 fastapi==0.116.1
 uvicorn[standard]==0.35.0
+elasticsearch==8.9.0
+tqdm==4.67.1
