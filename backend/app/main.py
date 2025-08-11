@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from backend.app.api import search
+from app.api import search
 
 app = FastAPI(title="CosmicSearch API")
 

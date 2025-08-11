@@ -1,5 +1,6 @@
+import json
 from fastapi import APIRouter
-from backend.app.core.elasticsearch import get_es_client
+from app.core.elasticsearch import get_es_client
 
 router = APIRouter()
 
@@ -21,12 +22,20 @@ def search(search_query: str, skip: int = 0, limit: int = 10):
         }
     }
 
+    print("--- Elasticsearch Query ---")
+    print(json.dumps({"query": query}, indent=2))
+
     response = es.search(
         index="apod",
-        query=query,
-        from_=skip,
-        size=limit,
+        body={
+            "query": query,
+            "from": skip,
+            "size": limit,
+        },
     )
+
+    print("\n--- Elasticsearch Response ---")
+    print(json.dumps(response.body, indent=2))
 
     es.close()
 
