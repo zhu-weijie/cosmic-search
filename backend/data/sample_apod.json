@@ -1,0 +1,14 @@
+[
+    {
+      "title": "A Galaxy Beyond the Farthest Quasar",
+      "explanation": "What is the farthest known object? The answer keeps changing. In early 2023, the James Webb Space Telescope (JWST) identified several galaxies that are candidates for the farthest object ever seen.",
+      "date": "2023-03-01",
+      "image_url": "https://apod.nasa.gov/apod/image/2303/farthest_webb_960.jpg"
+    },
+    {
+      "title": "M1: The Crab Nebula from Hubble",
+      "explanation": "This is the mess that is left when a star explodes. The Crab Nebula, the result of a supernova seen in 1054 AD, is filled with mysterious filaments.",
+      "date": "2022-11-25",
+      "image_url": "https://apod.nasa.gov/apod/image/2211/CrabNebula_Hubble_960.jpg"
+    }
+]
