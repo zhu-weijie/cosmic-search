@@ -1,8 +1,9 @@
 import json
 from tqdm import tqdm
 from elasticsearch import Elasticsearch
-from app.core.config import INDEX_NAME_DEFAULT, INDEX_NAME_N_GRAM
-from app.core.elasticsearch import get_es_client
+
+from backend.app.core.config import INDEX_NAME_DEFAULT, INDEX_NAME_N_GRAM
+from backend.app.core.elasticsearch import get_es_client
 
 
 def create_index(es: Elasticsearch, index_name: str, use_n_gram: bool):
